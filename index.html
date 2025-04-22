@@ -26,8 +26,8 @@
 
                     <div class=" grid grid-cols-3 mr-10 text-center items-center">
                         <img class="" src="./A5-Dev-Board/assets/checkbox.png" alt="">
-                        <h2>23</h2>
-                        <img src="./A5-Dev-Board/assets/theme-btn.png" alt="">
+                        <h2 id="new-number">23</h2>
+                        <img id="changeColorBtn" src="./A5-Dev-Board/assets/theme-btn.png" alt="">
                     </div>
                 </div>
             </nav>
@@ -47,16 +47,16 @@
                             <img src="./A5-Dev-Board/assets/checkbox.png" alt="">
                             <div class="ml-2">
                                 <h3 class="text-gray-600 font-semi-bold">Task assaigned</h3>
-                                <h2 class="font-bold">05</h2>
+                                <h2 id="new-number-2" class="font-bold">06</h2>
                             </div>
                         </div>
 
 
                         <div
-                            class="card-2 col-span-3 border  flex
+                        id="Discover" class="card-2 col-span-3 border  flex
                border-none  h-25 bg-gradient-to-r from-blue-600 to-blue-400 rounded-md text-start justify-center items-center">
                             <img src="./A5-Dev-Board/assets/board.png" alt="">
-                            <h2>Discover Something<br>
+                            <h2 >Discover Something<br>
                                 New Today!</h2>
                         </div>
 
@@ -76,7 +76,7 @@
 
                 </div>
                 <div class="div-2 grid grid-cols-3 gap-2 m-10">
-                    <div class="card-01 border">
+                    <div class="card-01 p-5">
                         <h3 class=" shadow text-center bg-gray-50 rounded-sm mt-2 text-gray-400 ">ShopEase</h3>
                         <h2 class="font-bold  text-xl mt-2 text-center">Fix Mobile Button Issue</h2>
                         <p
@@ -88,12 +88,12 @@
                                 <br>
                                 21 March 2025
                             </h3>
-                            <button class="btn  btn-primary">complete</button>
+                            <button id="btn-complete-1" class="btn  btn-primary">complete</button>
                         </div>
                     </div>
 
                     <!-- card 2 -->
-                    <div class="card-01 border">
+                    <div class="card-02 p-5 ">
                         <h3 class=" shadow text-center bg-gray-50 rounded-sm mt-2 text-gray-400 ">CloudSync</h3>
                         <h2 class="font-bold  text-xl mt-2 text-center">Add Dark Mode</h2>
                         <p
@@ -106,11 +106,11 @@
                                 <br>
                                 21 March 2025
                             </h3>
-                            <button class="btn  btn-primary">complete</button>
+                            <button  id="btn-complete-2" class="btn  btn-primary">complete</button>
                         </div>
                     </div>
                     <!-- card 3 -->
-                    <div class="card-01 border">
+                    <div class="card-03 p-5">
                         <h3 class=" shadow text-center bg-gray-50 rounded-sm mt-2 text-gray-400 ">SwiftPay</h3>
                         <h2 class="font-bold  text-xl mt-2 text-center">Optimize Home page </h2>
                         <p
@@ -122,11 +122,11 @@
                                 <br>
                                 21 March 2025
                             </h3>
-                            <button class="btn  btn-primary">complete</button>
+                            <button  id="btn-complete-3" class="btn  btn-primary">complete</button>
                         </div>
                     </div>
                     <!-- card 4 -->
-                    <div class="card-01 border">
+                    <div class="card-04 p-5 ">
                         <h3 class=" shadow text-center bg-gray-50 rounded-sm mt-2 text-gray-400 ">Meta</h3>
                         <h2 class="font-bold  text-xl mt-2 text-center">Add new emoji 🤲</h2>
                         <p
@@ -138,11 +138,11 @@
                                 <br>
                                 21 March 2025
                             </h3>
-                            <button class="btn  btn-primary">complete</button>
+                            <button  id="btn-complete-4" class="btn  btn-primary">complete</button>
                         </div>
                     </div>
                     <!-- card 5 -->
-                    <div class="card-01 border">
+                    <div class="card-05 p-5 ">
                         <h3 class=" shadow text-center bg-gray-50 rounded-sm mt-2 text-gray-400 ">Google LLC</h3>
                         <h2 class="font-bold  text-xl mt-2 text-center">Integrate OpenAI API </h2>
                         <p
@@ -154,11 +154,11 @@
                                 <br>
                                 21 March 2025
                             </h3>
-                            <button class="btn  btn-primary">complete</button>
+                            <button  id="btn-complete-5" class="btn  btn-primary">complete</button>
                         </div>
                     </div>
                     <!-- card 6 -->
-                    <div class="card-01 border">
+                    <div class="card-06 p-5">
                         <h3 class=" shadow text-center bg-gray-50 rounded-sm mt-2 text-gray-400 ">Glassdoar</h3>
                         <h2 class="font-bold  text-xl mt-2 text-center">Improve Job searching </h2>
                         <p
@@ -171,27 +171,28 @@
                                 <br>
                                 21 March 2025
                             </h3>
-                            <button class="btn  btn-primary">complete</button>
+                            <button  id="btn-complete-6" class="btn  btn-primary">complete</button>
                         </div>
                     </div>
 
 
                 </div>
         </section>
-        <section class="section-2 w-[30%]">
+        <section class="section-2 w-[30%] ml-10 mt-10 ">
             <div>
-                <div>
-                    <img src="./A5-Dev-Board/assets/activity.png" alt="">
+                <div class="flex gap-2"> 
+                    <img class="w-5 h-8" src="./A5-Dev-Board/assets/activity.png" alt="">
                     <h4>Activity log</h4>
                 </div>
             </div>
-            <button class="btn btn-primary">Clear History</button>
+            <button id="clearBtn"  class="btn btn-primary mt-2">Clear History</button>
             </div>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./app/app.js"></script>
 </body>
 
 </html>
